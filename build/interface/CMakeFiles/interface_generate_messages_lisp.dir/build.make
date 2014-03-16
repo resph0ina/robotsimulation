@@ -45,6 +45,7 @@ include interface/CMakeFiles/interface_generate_messages_lisp.dir/progress.make
 interface/CMakeFiles/interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/msg/Num.lisp
 interface/CMakeFiles/interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/AddTwoInts.lisp
 interface/CMakeFiles/interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/parameter.lisp
+interface/CMakeFiles/interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/KeepStaticParameter.lisp
 interface/CMakeFiles/interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/converter.lisp
 
 /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/msg/Num.lisp: /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
@@ -65,9 +66,15 @@ interface/CMakeFiles/interface_generate_messages_lisp: /home/wqh/catkin_ws/devel
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from interface/parameter.srv"
 	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/wqh/catkin_ws/src/interface/srv/parameter.srv -Iinterface:/home/wqh/catkin_ws/src/interface/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p interface -o /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv
 
+/home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/KeepStaticParameter.lisp: /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/KeepStaticParameter.lisp: /home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from interface/KeepStaticParameter.srv"
+	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv -Iinterface:/home/wqh/catkin_ws/src/interface/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p interface -o /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv
+
 /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/converter.lisp: /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/converter.lisp: /home/wqh/catkin_ws/src/interface/srv/converter.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from interface/converter.srv"
 	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/wqh/catkin_ws/src/interface/srv/converter.srv -Iinterface:/home/wqh/catkin_ws/src/interface/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p interface -o /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv
 
@@ -75,6 +82,7 @@ interface_generate_messages_lisp: interface/CMakeFiles/interface_generate_messag
 interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/msg/Num.lisp
 interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/AddTwoInts.lisp
 interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/parameter.lisp
+interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/KeepStaticParameter.lisp
 interface_generate_messages_lisp: /home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/converter.lisp
 interface_generate_messages_lisp: interface/CMakeFiles/interface_generate_messages_lisp.dir/build.make
 .PHONY : interface_generate_messages_lisp

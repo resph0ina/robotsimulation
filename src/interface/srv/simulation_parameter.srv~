@@ -1,0 +1,7 @@
+float64 position_neck_head
+float64 position_baselink_neck
+float64 velocity_left_fw
+float64 velocity_right_fw
+float64 velocity_stepforward
+float64 velocity_stepbackward
+---

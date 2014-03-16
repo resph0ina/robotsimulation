@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "interface: 1 messages, 3 services")
+message(STATUS "interface: 1 messages, 4 services")
 
 set(MSG_I_FLAGS "-Iinterface:/home/wqh/catkin_ws/src/interface/msg;-Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg")
 
@@ -33,6 +33,12 @@ _generate_srv_cpp(interface
 )
 _generate_srv_cpp(interface
   "/home/wqh/catkin_ws/src/interface/srv/parameter.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interface
+)
+_generate_srv_cpp(interface
+  "/home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interface
@@ -85,6 +91,12 @@ _generate_srv_lisp(interface
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interface
 )
 _generate_srv_lisp(interface
+  "/home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interface
+)
+_generate_srv_lisp(interface
   "/home/wqh/catkin_ws/src/interface/srv/converter.srv"
   "${MSG_I_FLAGS}"
   ""
@@ -127,6 +139,12 @@ _generate_srv_py(interface
 )
 _generate_srv_py(interface
   "/home/wqh/catkin_ws/src/interface/srv/parameter.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interface
+)
+_generate_srv_py(interface
+  "/home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interface

@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "/home/wqh/catkin_ws/devel/include/interface/Num.h"
   "/home/wqh/catkin_ws/devel/include/interface/AddTwoInts.h"
   "/home/wqh/catkin_ws/devel/include/interface/parameter.h"
+  "/home/wqh/catkin_ws/devel/include/interface/KeepStaticParameter.h"
   "/home/wqh/catkin_ws/devel/include/interface/converter.h"
 )
 

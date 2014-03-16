@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/_Num.py"
   "/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_AddTwoInts.py"
   "/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_parameter.py"
+  "/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_KeepStaticParameter.py"
   "/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_converter.py"
   "/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/__init__.py"
   "/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/__init__.py"

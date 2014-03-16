@@ -57,7 +57,7 @@ find_package(catkin REQUIRED COMPONENTS
 #   Service1.srv
 #   Service2.srv
 # )
-  add_service_files(FILES AddTwoInts.srv converter.srv parameter.srv)
+  add_service_files(FILES AddTwoInts.srv converter.srv parameter.srv KeepStaticParameter.srv)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -104,21 +104,6 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 ## Declare a cpp executable
 # add_executable(interface_node src/interface_node.cpp)
-add_executable(publisher src/publisher.cpp)
-target_link_libraries(publisher ${catkin_LIBRARIES})
-add_dependencies(publisher interface_generate_messages_cpp)
-
-add_executable(subscriber src/subscriber.cpp)
-target_link_libraries(subscriber ${catkin_LIBRARIES})
-add_dependencies(subscriber interface_generate_messages_cpp)
-
-add_executable(add_two_ints_server src/add_two_ints_server.cpp)
-target_link_libraries(add_two_ints_server ${catkin_LIBRARIES})
-add_dependencies(add_two_ints_server interface_gencpp)
-
-add_executable(add_two_ints_client src/add_two_ints_client.cpp)
-target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})
-add_dependencies(add_two_ints_client interface_gencpp)
 
 add_executable(simulator_server src/simulator_server.cpp)
 target_link_libraries(simulator_server ${catkin_LIBRARIES})
@@ -135,6 +120,22 @@ add_dependencies(server interface_generate_messages_cpp)
 add_executable(client src/client.cpp)
 target_link_libraries(client ${catkin_LIBRARIES})
 add_dependencies(client interface_generate_messages_cpp)
+
+#add_executable(server src/server.cpp)
+#target_link_libraries(server ${catkin_LIBRARIES})
+#add_dependencies(server interface_generate_messages_cpp)
+
+#add_executable(client src/client.cpp)
+#target_link_libraries(client ${catkin_LIBRARIES})
+#add_dependencies(client interface_generate_messages_cpp)
+
+add_executable(simulation_server src/simulation_server.cpp)
+target_link_libraries(simulation_server ${catkin_LIBRARIES})
+add_dependencies(simulation_server interface_generate_messages_cpp)
+
+add_executable(simulation_client src/simulation_client.cpp)
+target_link_libraries(simulation_client ${catkin_LIBRARIES})
+add_dependencies(simulation_client interface_generate_messages_cpp)
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(interface_node interface_generate_messages_cpp)

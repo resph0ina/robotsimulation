@@ -45,6 +45,7 @@ include interface/CMakeFiles/interface_generate_messages_cpp.dir/progress.make
 interface/CMakeFiles/interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/Num.h
 interface/CMakeFiles/interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/AddTwoInts.h
 interface/CMakeFiles/interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/parameter.h
+interface/CMakeFiles/interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/KeepStaticParameter.h
 interface/CMakeFiles/interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/converter.h
 
 /home/wqh/catkin_ws/devel/include/interface/Num.h: /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
@@ -70,11 +71,19 @@ interface/CMakeFiles/interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from interface/parameter.srv"
 	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/wqh/catkin_ws/src/interface/srv/parameter.srv -Iinterface:/home/wqh/catkin_ws/src/interface/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p interface -o /home/wqh/catkin_ws/devel/include/interface -e /opt/ros/hydro/share/gencpp/cmake/..
 
+/home/wqh/catkin_ws/devel/include/interface/KeepStaticParameter.h: /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/wqh/catkin_ws/devel/include/interface/KeepStaticParameter.h: /home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv
+/home/wqh/catkin_ws/devel/include/interface/KeepStaticParameter.h: /opt/ros/hydro/share/gencpp/cmake/../msg.h.template
+/home/wqh/catkin_ws/devel/include/interface/KeepStaticParameter.h: /opt/ros/hydro/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from interface/KeepStaticParameter.srv"
+	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv -Iinterface:/home/wqh/catkin_ws/src/interface/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p interface -o /home/wqh/catkin_ws/devel/include/interface -e /opt/ros/hydro/share/gencpp/cmake/..
+
 /home/wqh/catkin_ws/devel/include/interface/converter.h: /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/wqh/catkin_ws/devel/include/interface/converter.h: /home/wqh/catkin_ws/src/interface/srv/converter.srv
 /home/wqh/catkin_ws/devel/include/interface/converter.h: /opt/ros/hydro/share/gencpp/cmake/../msg.h.template
 /home/wqh/catkin_ws/devel/include/interface/converter.h: /opt/ros/hydro/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from interface/converter.srv"
 	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/wqh/catkin_ws/src/interface/srv/converter.srv -Iinterface:/home/wqh/catkin_ws/src/interface/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p interface -o /home/wqh/catkin_ws/devel/include/interface -e /opt/ros/hydro/share/gencpp/cmake/..
 
@@ -82,6 +91,7 @@ interface_generate_messages_cpp: interface/CMakeFiles/interface_generate_message
 interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/Num.h
 interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/AddTwoInts.h
 interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/parameter.h
+interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/KeepStaticParameter.h
 interface_generate_messages_cpp: /home/wqh/catkin_ws/devel/include/interface/converter.h
 interface_generate_messages_cpp: interface/CMakeFiles/interface_generate_messages_cpp.dir/build.make
 .PHONY : interface_generate_messages_cpp

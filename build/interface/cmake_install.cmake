@@ -41,6 +41,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/wqh/catkin_ws/src/interface/srv/AddTwoInts.srv"
     "/home/wqh/catkin_ws/src/interface/srv/converter.srv"
     "/home/wqh/catkin_ws/src/interface/srv/parameter.srv"
+    "/home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

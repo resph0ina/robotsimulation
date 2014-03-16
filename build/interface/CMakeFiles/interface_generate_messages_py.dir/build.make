@@ -45,6 +45,7 @@ include interface/CMakeFiles/interface_generate_messages_py.dir/progress.make
 interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/_Num.py
 interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_AddTwoInts.py
 interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_parameter.py
+interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_KeepStaticParameter.py
 interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_converter.py
 interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/__init__.py
 interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/__init__.py
@@ -67,9 +68,15 @@ interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/l
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV interface/parameter"
 	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/wqh/catkin_ws/src/interface/srv/parameter.srv -Iinterface:/home/wqh/catkin_ws/src/interface/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p interface -o /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv
 
+/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_KeepStaticParameter.py: /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_KeepStaticParameter.py: /home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV interface/KeepStaticParameter"
+	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/wqh/catkin_ws/src/interface/srv/KeepStaticParameter.srv -Iinterface:/home/wqh/catkin_ws/src/interface/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p interface -o /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv
+
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_converter.py: /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_converter.py: /home/wqh/catkin_ws/src/interface/srv/converter.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV interface/converter"
 	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/wqh/catkin_ws/src/interface/srv/converter.srv -Iinterface:/home/wqh/catkin_ws/src/interface/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p interface -o /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv
 
@@ -77,8 +84,9 @@ interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/l
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/_Num.py
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_AddTwoInts.py
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_parameter.py
+/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_KeepStaticParameter.py
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_converter.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for interface"
 	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg --initpy
 
@@ -86,8 +94,9 @@ interface/CMakeFiles/interface_generate_messages_py: /home/wqh/catkin_ws/devel/l
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/_Num.py
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_AddTwoInts.py
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_parameter.py
+/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_KeepStaticParameter.py
 /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/__init__.py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_converter.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/wqh/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for interface"
 	cd /home/wqh/catkin_ws/build/interface && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv --initpy
 
@@ -95,6 +104,7 @@ interface_generate_messages_py: interface/CMakeFiles/interface_generate_messages
 interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/_Num.py
 interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_AddTwoInts.py
 interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_parameter.py
+interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_KeepStaticParameter.py
 interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/_converter.py
 interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/msg/__init__.py
 interface_generate_messages_py: /home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface/srv/__init__.py

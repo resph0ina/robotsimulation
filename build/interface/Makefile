@@ -147,34 +147,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-interface/CMakeFiles/add_two_ints_client.dir/rule:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 interface/CMakeFiles/add_two_ints_client.dir/rule
-.PHONY : interface/CMakeFiles/add_two_ints_client.dir/rule
-
-# Convenience name for target.
-add_two_ints_client: interface/CMakeFiles/add_two_ints_client.dir/rule
-.PHONY : add_two_ints_client
-
-# fast build rule for target.
-add_two_ints_client/fast:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/add_two_ints_client.dir/build.make interface/CMakeFiles/add_two_ints_client.dir/build
-.PHONY : add_two_ints_client/fast
-
-# Convenience name for target.
-interface/CMakeFiles/add_two_ints_server.dir/rule:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 interface/CMakeFiles/add_two_ints_server.dir/rule
-.PHONY : interface/CMakeFiles/add_two_ints_server.dir/rule
-
-# Convenience name for target.
-add_two_ints_server: interface/CMakeFiles/add_two_ints_server.dir/rule
-.PHONY : add_two_ints_server
-
-# fast build rule for target.
-add_two_ints_server/fast:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/add_two_ints_server.dir/build.make interface/CMakeFiles/add_two_ints_server.dir/build
-.PHONY : add_two_ints_server/fast
-
-# Convenience name for target.
 interface/CMakeFiles/client.dir/rule:
 	cd /home/wqh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 interface/CMakeFiles/client.dir/rule
 .PHONY : interface/CMakeFiles/client.dir/rule
@@ -287,20 +259,6 @@ interface_genpy/fast:
 .PHONY : interface_genpy/fast
 
 # Convenience name for target.
-interface/CMakeFiles/publisher.dir/rule:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 interface/CMakeFiles/publisher.dir/rule
-.PHONY : interface/CMakeFiles/publisher.dir/rule
-
-# Convenience name for target.
-publisher: interface/CMakeFiles/publisher.dir/rule
-.PHONY : publisher
-
-# fast build rule for target.
-publisher/fast:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/publisher.dir/build.make interface/CMakeFiles/publisher.dir/build
-.PHONY : publisher/fast
-
-# Convenience name for target.
 interface/CMakeFiles/server.dir/rule:
 	cd /home/wqh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 interface/CMakeFiles/server.dir/rule
 .PHONY : interface/CMakeFiles/server.dir/rule
@@ -313,6 +271,34 @@ server: interface/CMakeFiles/server.dir/rule
 server/fast:
 	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/server.dir/build.make interface/CMakeFiles/server.dir/build
 .PHONY : server/fast
+
+# Convenience name for target.
+interface/CMakeFiles/simulator_KeepStatic_client.dir/rule:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 interface/CMakeFiles/simulator_KeepStatic_client.dir/rule
+.PHONY : interface/CMakeFiles/simulator_KeepStatic_client.dir/rule
+
+# Convenience name for target.
+simulator_KeepStatic_client: interface/CMakeFiles/simulator_KeepStatic_client.dir/rule
+.PHONY : simulator_KeepStatic_client
+
+# fast build rule for target.
+simulator_KeepStatic_client/fast:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_client.dir/build.make interface/CMakeFiles/simulator_KeepStatic_client.dir/build
+.PHONY : simulator_KeepStatic_client/fast
+
+# Convenience name for target.
+interface/CMakeFiles/simulator_KeepStatic_server.dir/rule:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 interface/CMakeFiles/simulator_KeepStatic_server.dir/rule
+.PHONY : interface/CMakeFiles/simulator_KeepStatic_server.dir/rule
+
+# Convenience name for target.
+simulator_KeepStatic_server: interface/CMakeFiles/simulator_KeepStatic_server.dir/rule
+.PHONY : simulator_KeepStatic_server
+
+# fast build rule for target.
+simulator_KeepStatic_server/fast:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_server.dir/build.make interface/CMakeFiles/simulator_KeepStatic_server.dir/build
+.PHONY : simulator_KeepStatic_server/fast
 
 # Convenience name for target.
 interface/CMakeFiles/simulator_client.dir/rule:
@@ -342,68 +328,6 @@ simulator_server/fast:
 	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_server.dir/build.make interface/CMakeFiles/simulator_server.dir/build
 .PHONY : simulator_server/fast
 
-# Convenience name for target.
-interface/CMakeFiles/subscriber.dir/rule:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 interface/CMakeFiles/subscriber.dir/rule
-.PHONY : interface/CMakeFiles/subscriber.dir/rule
-
-# Convenience name for target.
-subscriber: interface/CMakeFiles/subscriber.dir/rule
-.PHONY : subscriber
-
-# fast build rule for target.
-subscriber/fast:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/subscriber.dir/build.make interface/CMakeFiles/subscriber.dir/build
-.PHONY : subscriber/fast
-
-src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
-.PHONY : src/add_two_ints_client.o
-
-# target to build an object file
-src/add_two_ints_client.cpp.o:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/add_two_ints_client.dir/build.make interface/CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o
-.PHONY : src/add_two_ints_client.cpp.o
-
-src/add_two_ints_client.i: src/add_two_ints_client.cpp.i
-.PHONY : src/add_two_ints_client.i
-
-# target to preprocess a source file
-src/add_two_ints_client.cpp.i:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/add_two_ints_client.dir/build.make interface/CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.i
-.PHONY : src/add_two_ints_client.cpp.i
-
-src/add_two_ints_client.s: src/add_two_ints_client.cpp.s
-.PHONY : src/add_two_ints_client.s
-
-# target to generate assembly for a file
-src/add_two_ints_client.cpp.s:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/add_two_ints_client.dir/build.make interface/CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.s
-.PHONY : src/add_two_ints_client.cpp.s
-
-src/add_two_ints_server.o: src/add_two_ints_server.cpp.o
-.PHONY : src/add_two_ints_server.o
-
-# target to build an object file
-src/add_two_ints_server.cpp.o:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/add_two_ints_server.dir/build.make interface/CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o
-.PHONY : src/add_two_ints_server.cpp.o
-
-src/add_two_ints_server.i: src/add_two_ints_server.cpp.i
-.PHONY : src/add_two_ints_server.i
-
-# target to preprocess a source file
-src/add_two_ints_server.cpp.i:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/add_two_ints_server.dir/build.make interface/CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.i
-.PHONY : src/add_two_ints_server.cpp.i
-
-src/add_two_ints_server.s: src/add_two_ints_server.cpp.s
-.PHONY : src/add_two_ints_server.s
-
-# target to generate assembly for a file
-src/add_two_ints_server.cpp.s:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/add_two_ints_server.dir/build.make interface/CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.s
-.PHONY : src/add_two_ints_server.cpp.s
-
 src/client.o: src/client.cpp.o
 .PHONY : src/client.o
 
@@ -428,30 +352,6 @@ src/client.cpp.s:
 	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/client.dir/build.make interface/CMakeFiles/client.dir/src/client.cpp.s
 .PHONY : src/client.cpp.s
 
-src/publisher.o: src/publisher.cpp.o
-.PHONY : src/publisher.o
-
-# target to build an object file
-src/publisher.cpp.o:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/publisher.dir/build.make interface/CMakeFiles/publisher.dir/src/publisher.cpp.o
-.PHONY : src/publisher.cpp.o
-
-src/publisher.i: src/publisher.cpp.i
-.PHONY : src/publisher.i
-
-# target to preprocess a source file
-src/publisher.cpp.i:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/publisher.dir/build.make interface/CMakeFiles/publisher.dir/src/publisher.cpp.i
-.PHONY : src/publisher.cpp.i
-
-src/publisher.s: src/publisher.cpp.s
-.PHONY : src/publisher.s
-
-# target to generate assembly for a file
-src/publisher.cpp.s:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/publisher.dir/build.make interface/CMakeFiles/publisher.dir/src/publisher.cpp.s
-.PHONY : src/publisher.cpp.s
-
 src/server.o: src/server.cpp.o
 .PHONY : src/server.o
 
@@ -475,6 +375,54 @@ src/server.s: src/server.cpp.s
 src/server.cpp.s:
 	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/server.dir/build.make interface/CMakeFiles/server.dir/src/server.cpp.s
 .PHONY : src/server.cpp.s
+
+src/simulator_KeepStatic_client.o: src/simulator_KeepStatic_client.cpp.o
+.PHONY : src/simulator_KeepStatic_client.o
+
+# target to build an object file
+src/simulator_KeepStatic_client.cpp.o:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_client.dir/build.make interface/CMakeFiles/simulator_KeepStatic_client.dir/src/simulator_KeepStatic_client.cpp.o
+.PHONY : src/simulator_KeepStatic_client.cpp.o
+
+src/simulator_KeepStatic_client.i: src/simulator_KeepStatic_client.cpp.i
+.PHONY : src/simulator_KeepStatic_client.i
+
+# target to preprocess a source file
+src/simulator_KeepStatic_client.cpp.i:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_client.dir/build.make interface/CMakeFiles/simulator_KeepStatic_client.dir/src/simulator_KeepStatic_client.cpp.i
+.PHONY : src/simulator_KeepStatic_client.cpp.i
+
+src/simulator_KeepStatic_client.s: src/simulator_KeepStatic_client.cpp.s
+.PHONY : src/simulator_KeepStatic_client.s
+
+# target to generate assembly for a file
+src/simulator_KeepStatic_client.cpp.s:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_client.dir/build.make interface/CMakeFiles/simulator_KeepStatic_client.dir/src/simulator_KeepStatic_client.cpp.s
+.PHONY : src/simulator_KeepStatic_client.cpp.s
+
+src/simulator_KeepStatic_server.o: src/simulator_KeepStatic_server.cpp.o
+.PHONY : src/simulator_KeepStatic_server.o
+
+# target to build an object file
+src/simulator_KeepStatic_server.cpp.o:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_server.dir/build.make interface/CMakeFiles/simulator_KeepStatic_server.dir/src/simulator_KeepStatic_server.cpp.o
+.PHONY : src/simulator_KeepStatic_server.cpp.o
+
+src/simulator_KeepStatic_server.i: src/simulator_KeepStatic_server.cpp.i
+.PHONY : src/simulator_KeepStatic_server.i
+
+# target to preprocess a source file
+src/simulator_KeepStatic_server.cpp.i:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_server.dir/build.make interface/CMakeFiles/simulator_KeepStatic_server.dir/src/simulator_KeepStatic_server.cpp.i
+.PHONY : src/simulator_KeepStatic_server.cpp.i
+
+src/simulator_KeepStatic_server.s: src/simulator_KeepStatic_server.cpp.s
+.PHONY : src/simulator_KeepStatic_server.s
+
+# target to generate assembly for a file
+src/simulator_KeepStatic_server.cpp.s:
+	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_server.dir/build.make interface/CMakeFiles/simulator_KeepStatic_server.dir/src/simulator_KeepStatic_server.cpp.s
+.PHONY : src/simulator_KeepStatic_server.cpp.s
 
 src/simulator_client.o: src/simulator_client.cpp.o
 .PHONY : src/simulator_client.o
@@ -524,38 +472,12 @@ src/simulator_server.cpp.s:
 	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/simulator_server.dir/build.make interface/CMakeFiles/simulator_server.dir/src/simulator_server.cpp.s
 .PHONY : src/simulator_server.cpp.s
 
-src/subscriber.o: src/subscriber.cpp.o
-.PHONY : src/subscriber.o
-
-# target to build an object file
-src/subscriber.cpp.o:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/subscriber.dir/build.make interface/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
-.PHONY : src/subscriber.cpp.o
-
-src/subscriber.i: src/subscriber.cpp.i
-.PHONY : src/subscriber.i
-
-# target to preprocess a source file
-src/subscriber.cpp.i:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/subscriber.dir/build.make interface/CMakeFiles/subscriber.dir/src/subscriber.cpp.i
-.PHONY : src/subscriber.cpp.i
-
-src/subscriber.s: src/subscriber.cpp.s
-.PHONY : src/subscriber.s
-
-# target to generate assembly for a file
-src/subscriber.cpp.s:
-	cd /home/wqh/catkin_ws/build && $(MAKE) -f interface/CMakeFiles/subscriber.dir/build.make interface/CMakeFiles/subscriber.dir/src/subscriber.cpp.s
-.PHONY : src/subscriber.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... add_two_ints_client"
-	@echo "... add_two_ints_server"
 	@echo "... client"
 	@echo "... edit_cache"
 	@echo "... install"
@@ -569,37 +491,31 @@ help:
 	@echo "... interface_genlisp"
 	@echo "... interface_genpy"
 	@echo "... list_install_components"
-	@echo "... publisher"
 	@echo "... rebuild_cache"
 	@echo "... server"
+	@echo "... simulator_KeepStatic_client"
+	@echo "... simulator_KeepStatic_server"
 	@echo "... simulator_client"
 	@echo "... simulator_server"
-	@echo "... subscriber"
 	@echo "... test"
-	@echo "... src/add_two_ints_client.o"
-	@echo "... src/add_two_ints_client.i"
-	@echo "... src/add_two_ints_client.s"
-	@echo "... src/add_two_ints_server.o"
-	@echo "... src/add_two_ints_server.i"
-	@echo "... src/add_two_ints_server.s"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
 	@echo "... src/client.s"
-	@echo "... src/publisher.o"
-	@echo "... src/publisher.i"
-	@echo "... src/publisher.s"
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"
+	@echo "... src/simulator_KeepStatic_client.o"
+	@echo "... src/simulator_KeepStatic_client.i"
+	@echo "... src/simulator_KeepStatic_client.s"
+	@echo "... src/simulator_KeepStatic_server.o"
+	@echo "... src/simulator_KeepStatic_server.i"
+	@echo "... src/simulator_KeepStatic_server.s"
 	@echo "... src/simulator_client.o"
 	@echo "... src/simulator_client.i"
 	@echo "... src/simulator_client.s"
 	@echo "... src/simulator_server.o"
 	@echo "... src/simulator_server.i"
 	@echo "... src/simulator_server.s"
-	@echo "... src/subscriber.o"
-	@echo "... src/subscriber.i"
-	@echo "... src/subscriber.s"
 .PHONY : help
 
 

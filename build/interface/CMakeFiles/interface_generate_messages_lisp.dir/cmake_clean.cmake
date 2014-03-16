@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "/home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/msg/Num.lisp"
   "/home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/AddTwoInts.lisp"
   "/home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/parameter.lisp"
+  "/home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/KeepStaticParameter.lisp"
   "/home/wqh/catkin_ws/devel/share/common-lisp/ros/interface/srv/converter.lisp"
 )
 

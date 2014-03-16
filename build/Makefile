@@ -1213,32 +1213,6 @@ gazebo_tutorials/fast:
 .PHONY : gazebo_tutorials/fast
 
 #=============================================================================
-# Target rules for targets named add_two_ints_client
-
-# Build rule for target.
-add_two_ints_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_client
-.PHONY : add_two_ints_client
-
-# fast build rule for target.
-add_two_ints_client/fast:
-	$(MAKE) -f interface/CMakeFiles/add_two_ints_client.dir/build.make interface/CMakeFiles/add_two_ints_client.dir/build
-.PHONY : add_two_ints_client/fast
-
-#=============================================================================
-# Target rules for targets named add_two_ints_server
-
-# Build rule for target.
-add_two_ints_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_server
-.PHONY : add_two_ints_server
-
-# fast build rule for target.
-add_two_ints_server/fast:
-	$(MAKE) -f interface/CMakeFiles/add_two_ints_server.dir/build.make interface/CMakeFiles/add_two_ints_server.dir/build
-.PHONY : add_two_ints_server/fast
-
-#=============================================================================
 # Target rules for targets named client
 
 # Build rule for target.
@@ -1343,19 +1317,6 @@ interface_genpy/fast:
 .PHONY : interface_genpy/fast
 
 #=============================================================================
-# Target rules for targets named publisher
-
-# Build rule for target.
-publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 publisher
-.PHONY : publisher
-
-# fast build rule for target.
-publisher/fast:
-	$(MAKE) -f interface/CMakeFiles/publisher.dir/build.make interface/CMakeFiles/publisher.dir/build
-.PHONY : publisher/fast
-
-#=============================================================================
 # Target rules for targets named server
 
 # Build rule for target.
@@ -1367,6 +1328,32 @@ server: cmake_check_build_system
 server/fast:
 	$(MAKE) -f interface/CMakeFiles/server.dir/build.make interface/CMakeFiles/server.dir/build
 .PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named simulator_KeepStatic_client
+
+# Build rule for target.
+simulator_KeepStatic_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simulator_KeepStatic_client
+.PHONY : simulator_KeepStatic_client
+
+# fast build rule for target.
+simulator_KeepStatic_client/fast:
+	$(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_client.dir/build.make interface/CMakeFiles/simulator_KeepStatic_client.dir/build
+.PHONY : simulator_KeepStatic_client/fast
+
+#=============================================================================
+# Target rules for targets named simulator_KeepStatic_server
+
+# Build rule for target.
+simulator_KeepStatic_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simulator_KeepStatic_server
+.PHONY : simulator_KeepStatic_server
+
+# fast build rule for target.
+simulator_KeepStatic_server/fast:
+	$(MAKE) -f interface/CMakeFiles/simulator_KeepStatic_server.dir/build.make interface/CMakeFiles/simulator_KeepStatic_server.dir/build
+.PHONY : simulator_KeepStatic_server/fast
 
 #=============================================================================
 # Target rules for targets named simulator_client
@@ -1393,19 +1380,6 @@ simulator_server: cmake_check_build_system
 simulator_server/fast:
 	$(MAKE) -f interface/CMakeFiles/simulator_server.dir/build.make interface/CMakeFiles/simulator_server.dir/build
 .PHONY : simulator_server/fast
-
-#=============================================================================
-# Target rules for targets named subscriber
-
-# Build rule for target.
-subscriber: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 subscriber
-.PHONY : subscriber
-
-# fast build rule for target.
-subscriber/fast:
-	$(MAKE) -f interface/CMakeFiles/subscriber.dir/build.make interface/CMakeFiles/subscriber.dir/build
-.PHONY : subscriber/fast
 
 # Help Target
 help:
@@ -1502,8 +1476,6 @@ help:
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... trajectory_msgs_generate_messages_py"
 	@echo "... gazebo_tutorials"
-	@echo "... add_two_ints_client"
-	@echo "... add_two_ints_server"
 	@echo "... client"
 	@echo "... interface_gencpp"
 	@echo "... interface_generate_messages"
@@ -1512,11 +1484,11 @@ help:
 	@echo "... interface_generate_messages_py"
 	@echo "... interface_genlisp"
 	@echo "... interface_genpy"
-	@echo "... publisher"
 	@echo "... server"
+	@echo "... simulator_KeepStatic_client"
+	@echo "... simulator_KeepStatic_server"
 	@echo "... simulator_client"
 	@echo "... simulator_server"
-	@echo "... subscriber"
 .PHONY : help
 
 
