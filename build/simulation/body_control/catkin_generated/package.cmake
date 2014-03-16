@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "body_control")
-set(body_control_MAINTAINER "Dave Coleman <davetcoleman@gmail.com>")
-set(body_control_DEPRECATED "")
-set(body_control_VERSION "0.0.0")
-set(body_control_BUILD_DEPENDS )
-set(body_control_RUN_DEPENDS "controller_manager")
-set(body_control_BUILDTOOL_DEPENDS "catkin")

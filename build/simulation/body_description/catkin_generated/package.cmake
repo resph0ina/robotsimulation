@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "body_description")
-set(body_description_MAINTAINER "betelgeuse <betelgeuse@todo.todo>")
-set(body_description_DEPRECATED "")
-set(body_description_VERSION "0.0.0")
-set(body_description_BUILD_DEPENDS )
-set(body_description_RUN_DEPENDS )
-set(body_description_BUILDTOOL_DEPENDS "catkin")

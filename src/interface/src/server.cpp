@@ -1,5 +1,6 @@
 #include "ros/ros.h"
 #include "interface/parameter.h"
+#include "gazebo_msgs/ModelStates.h"
 #include "std_msgs/String.h"
 #include "std_msgs/Float64.h"
 #include <sstream>
@@ -30,6 +31,26 @@ bool add(interface::parameter::Request  &req,
   msg4.data = req.velocity_right_fw;
 }
   
+void gazeboModelStateCallback(const gazebo_msgs::ModelStates& msg)
+{
+  int length = msg.name.size();
+  float fieldx, fieldy, bodyx, bodyy;
+  float fieldw, bodyw;
+  for(int i=0;i<length;i++){
+     if(msg.name[i] == "soccer_field"){
+       fieldx = msg.pose[i].position.x;
+       fieldy = msg.pose[i].position.y;
+       fieldw = msg.pose[i].orientation.w;
+     }
+     else if(msg.name[i] == "body"){
+       bodyx = msg.pose[i].position.x;
+       bodyy = msg.pose[i].position.y;
+       bodyw = msg.pose[i].orientation.w;
+     }
+  }  
+  ROS_INFO("field at: %.1f,%.1f@%.1f; robot at: %.1f,%.1f@%.1f",
+	   fieldx, fieldy,fieldw, bodyx, bodyy,bodyw);
+}
 
 int main(int argc, char **argv)
 {
@@ -40,10 +61,11 @@ int main(int argc, char **argv)
   ros::Publisher baselink_neck_position_pub = n.advertise<std_msgs::Float64>("body/baselink_neck_position_controller/command", 1000);
   ros::Publisher left_front_wheel_velocity_pub = n.advertise<std_msgs::Float64>("body/left_front_wheel_velocity_controller/command", 1000);
   ros::Publisher right_front_wheel_velocity_pub = n.advertise<std_msgs::Float64>("/body/right_front_wheel_velocity_controller/command", 1000);
-  ros::Rate loop_rate(1);
+  ros::Rate loop_rate(10);
 
   ROS_INFO("Ready to accept orders and publish topic.");
   ros::ServiceServer service = n.advertiseService("final_simulate", add); 
+  ros::Subscriber sub = n.subscribe("/gazebo/model_states", 10, gazeboModelStateCallback);
   while (ros::ok())
   {
    	

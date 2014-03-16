@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "interface")
-set(interface_MAINTAINER "wqh <wqh@todo.todo>")
-set(interface_DEPRECATED "")
-set(interface_VERSION "0.0.0")
-set(interface_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "message_generation")
-set(interface_RUN_DEPENDS "message_runtime" "roscpp" "rospy" "std_msgs")
-set(interface_BUILDTOOL_DEPENDS "catkin")
