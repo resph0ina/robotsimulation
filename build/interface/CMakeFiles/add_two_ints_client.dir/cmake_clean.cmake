@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o"
-  "/home/wqh/catkin_ws/devel/lib/interface/add_two_ints_client.pdb"
-  "/home/wqh/catkin_ws/devel/lib/interface/add_two_ints_client"
+  "/home/betelgeuse/catkin_ws/devel/lib/interface/add_two_ints_client.pdb"
+  "/home/betelgeuse/catkin_ws/devel/lib/interface/add_two_ints_client"
 )
 
 # Per-language clean rules from dependency scanning.

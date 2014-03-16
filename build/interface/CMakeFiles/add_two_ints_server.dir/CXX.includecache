@@ -6,11 +6,51 @@
 
 #IncludeRegexTransform: 
 
-/home/wqh/catkin_ws/src/interface/src/add_two_ints_server.cpp
+/home/betelgeuse/catkin_ws/devel/include/interface/AddTwoInts.h
+ros/service_traits.h
+-
+interface/AddTwoIntsRequest.h
+-
+interface/AddTwoIntsResponse.h
+-
+
+/home/betelgeuse/catkin_ws/devel/include/interface/AddTwoIntsRequest.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/betelgeuse/catkin_ws/devel/include/interface/AddTwoIntsResponse.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/betelgeuse/catkin_ws/src/interface/src/add_two_ints_server.cpp
 ros/ros.h
-/home/wqh/catkin_ws/src/interface/src/ros/ros.h
-beginner_tutorials/AddTwoInts.h
-/home/wqh/catkin_ws/src/interface/src/beginner_tutorials/AddTwoInts.h
+/home/betelgeuse/catkin_ws/src/interface/src/ros/ros.h
+interface/AddTwoInts.h
+/home/betelgeuse/catkin_ws/src/interface/src/interface/AddTwoInts.h
 
 /opt/ros/hydro/include/XmlRpcDecl.h
 ros/macros.h
@@ -228,6 +268,10 @@ boost/make_shared.hpp
 
 /opt/ros/hydro/include/ros/message_forward.h
 memory
+-
+
+/opt/ros/hydro/include/ros/message_operations.h
+ostream
 -
 
 /opt/ros/hydro/include/ros/message_traits.h

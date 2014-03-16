@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/publisher.dir/src/publisher.cpp.o"
-  "/home/wqh/catkin_ws/devel/lib/interface/publisher.pdb"
-  "/home/wqh/catkin_ws/devel/lib/interface/publisher"
+  "/home/betelgeuse/catkin_ws/devel/lib/interface/publisher.pdb"
+  "/home/betelgeuse/catkin_ws/devel/lib/interface/publisher"
 )
 
 # Per-language clean rules from dependency scanning.

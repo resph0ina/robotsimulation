@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wqh/catkin_ws/src/interface/src/subscriber.cpp" "/home/wqh/catkin_ws/build/interface/CMakeFiles/subscriber.dir/src/subscriber.cpp.o"
+  "/home/betelgeuse/catkin_ws/src/interface/src/subscriber.cpp" "/home/betelgeuse/catkin_ws/build/interface/CMakeFiles/subscriber.dir/src/subscriber.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

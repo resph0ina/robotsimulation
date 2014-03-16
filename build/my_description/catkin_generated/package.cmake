@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "my_description")
-set(my_description_MAINTAINER "wqh <wqh@todo.todo>")
-set(my_description_DEPRECATED "")
-set(my_description_VERSION "0.0.0")
-set(my_description_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
-set(my_description_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
-set(my_description_BUILDTOOL_DEPENDS "catkin")

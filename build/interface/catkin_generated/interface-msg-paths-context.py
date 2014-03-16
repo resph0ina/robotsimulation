@@ -4,5 +4,5 @@ DEVELSPACE = 'TRUE' == 'TRUE'
 INSTALLSPACE = 'FALSE' == 'TRUE'
 
 PROJECT_NAME = 'interface'
-PKG_MSG_INCLUDE_DIRS = '/home/wqh/catkin_ws/src/interface/msg'
+PKG_MSG_INCLUDE_DIRS = '/home/betelgeuse/catkin_ws/src/interface/msg'
 ARG_DEPENDENCIES = 'std_msgs'

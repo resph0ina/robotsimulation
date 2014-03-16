@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/wqh/catkin_ws/src/interface/src/publisher.cpp
+/home/betelgeuse/catkin_ws/src/interface/src/publisher.cpp
 ros/ros.h
-/home/wqh/catkin_ws/src/interface/src/ros/ros.h
+/home/betelgeuse/catkin_ws/src/interface/src/ros/ros.h
 std_msgs/String.h
-/home/wqh/catkin_ws/src/interface/src/std_msgs/String.h
+/home/betelgeuse/catkin_ws/src/interface/src/std_msgs/String.h
 sstream
 -
 

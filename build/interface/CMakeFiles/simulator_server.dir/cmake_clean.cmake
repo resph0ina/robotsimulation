@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/simulator_server.dir/src/simulator_server.cpp.o"
-  "/home/wqh/catkin_ws/devel/lib/interface/simulator_server.pdb"
-  "/home/wqh/catkin_ws/devel/lib/interface/simulator_server"
+  "/home/betelgeuse/catkin_ws/devel/lib/interface/simulator_server.pdb"
+  "/home/betelgeuse/catkin_ws/devel/lib/interface/simulator_server"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/wqh/catkin_ws/devel/include/interface/parameter.h
+/home/betelgeuse/catkin_ws/devel/include/interface/parameter.h
 ros/service_traits.h
 -
 interface/parameterRequest.h
@@ -14,7 +14,7 @@ interface/parameterRequest.h
 interface/parameterResponse.h
 -
 
-/home/wqh/catkin_ws/devel/include/interface/parameterRequest.h
+/home/betelgeuse/catkin_ws/devel/include/interface/parameterRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wqh/catkin_ws/devel/include/interface/parameterResponse.h
+/home/betelgeuse/catkin_ws/devel/include/interface/parameterResponse.h
 string
 -
 vector
@@ -46,11 +46,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wqh/catkin_ws/src/interface/src/client.cpp
+/home/betelgeuse/catkin_ws/src/interface/src/client.cpp
 ros/ros.h
-/home/wqh/catkin_ws/src/interface/src/ros/ros.h
+/home/betelgeuse/catkin_ws/src/interface/src/ros/ros.h
 interface/parameter.h
-/home/wqh/catkin_ws/src/interface/src/interface/parameter.h
+/home/betelgeuse/catkin_ws/src/interface/src/interface/parameter.h
 cstdlib
 -
 

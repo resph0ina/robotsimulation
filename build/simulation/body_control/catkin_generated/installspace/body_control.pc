@@ -1,8 +1,8 @@
-prefix=/home/wqh/catkin_ws/install
+prefix=/home/betelgeuse/catkin_ws/install
 
 Name: body_control
 Description: Description of body_control
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/wqh/catkin_ws/install/lib 
+Libs: -L/home/betelgeuse/catkin_ws/install/lib 
 Requires: 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/wqh/catkin_ws/src/interface
+# Install script for directory: /home/betelgeuse/catkin_ws/src/interface
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/wqh/catkin_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/betelgeuse/catkin_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,53 +33,53 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface/msg" TYPE FILE FILES "/home/wqh/catkin_ws/src/interface/msg/Num.msg")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface/msg" TYPE FILE FILES "/home/betelgeuse/catkin_ws/src/interface/msg/Num.msg")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface/srv" TYPE FILE FILES
-    "/home/wqh/catkin_ws/src/interface/srv/AddTwoInts.srv"
-    "/home/wqh/catkin_ws/src/interface/srv/converter.srv"
-    "/home/wqh/catkin_ws/src/interface/srv/parameter.srv"
+    "/home/betelgeuse/catkin_ws/src/interface/srv/AddTwoInts.srv"
+    "/home/betelgeuse/catkin_ws/src/interface/srv/converter.srv"
+    "/home/betelgeuse/catkin_ws/src/interface/srv/parameter.srv"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface/cmake" TYPE FILE FILES "/home/wqh/catkin_ws/build/interface/catkin_generated/installspace/interface-msg-paths.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface/cmake" TYPE FILE FILES "/home/betelgeuse/catkin_ws/build/interface/catkin_generated/installspace/interface-msg-paths.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/wqh/catkin_ws/devel/include/interface")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/betelgeuse/catkin_ws/devel/include/interface")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/wqh/catkin_ws/devel/share/common-lisp/ros/interface")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/betelgeuse/catkin_ws/devel/share/common-lisp/ros/interface")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/betelgeuse/catkin_ws/devel/lib/python2.7/dist-packages/interface")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/wqh/catkin_ws/devel/lib/python2.7/dist-packages/interface")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/betelgeuse/catkin_ws/devel/lib/python2.7/dist-packages/interface")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/wqh/catkin_ws/build/interface/catkin_generated/installspace/interface.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/betelgeuse/catkin_ws/build/interface/catkin_generated/installspace/interface.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface/cmake" TYPE FILE FILES "/home/wqh/catkin_ws/build/interface/catkin_generated/installspace/interface-msg-extras.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface/cmake" TYPE FILE FILES "/home/betelgeuse/catkin_ws/build/interface/catkin_generated/installspace/interface-msg-extras.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface/cmake" TYPE FILE FILES
-    "/home/wqh/catkin_ws/build/interface/catkin_generated/installspace/interfaceConfig.cmake"
-    "/home/wqh/catkin_ws/build/interface/catkin_generated/installspace/interfaceConfig-version.cmake"
+    "/home/betelgeuse/catkin_ws/build/interface/catkin_generated/installspace/interfaceConfig.cmake"
+    "/home/betelgeuse/catkin_ws/build/interface/catkin_generated/installspace/interfaceConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface" TYPE FILE FILES "/home/wqh/catkin_ws/src/interface/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface" TYPE FILE FILES "/home/betelgeuse/catkin_ws/src/interface/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

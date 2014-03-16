@@ -1,1 +1,1 @@
-gazebo_ros_demos/custom_plugin_tutorial:gazebo_ros_demos/rrbot_control:gazebo_ros_demos/rrbot_description:gazebo_ros_demos/rrbot_gazebo:interface:my/baxter_common/baxter_common:my/baxter_common/baxter_core_msgs:my/baxter_common/baxter_description:my/baxter_common/baxter_maintenance_msgs:my/my_description:simulation/body_control:simulation/body_description:simulation/body_gazebo
+interface:my/my_description:simulation/body_control:simulation/body_description:simulation/body_gazebo

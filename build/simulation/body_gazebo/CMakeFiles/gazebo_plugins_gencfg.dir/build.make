@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wqh/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/betelgeuse/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wqh/catkin_ws/build
+CMAKE_BINARY_DIR = /home/betelgeuse/catkin_ws/build
 
 # Utility rule file for gazebo_plugins_gencfg.
 
@@ -53,10 +53,10 @@ simulation/body_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/build: gazebo_plugin
 .PHONY : simulation/body_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/build
 
 simulation/body_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/clean:
-	cd /home/wqh/catkin_ws/build/simulation/body_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_plugins_gencfg.dir/cmake_clean.cmake
+	cd /home/betelgeuse/catkin_ws/build/simulation/body_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_plugins_gencfg.dir/cmake_clean.cmake
 .PHONY : simulation/body_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/clean
 
 simulation/body_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/depend:
-	cd /home/wqh/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wqh/catkin_ws/src /home/wqh/catkin_ws/src/simulation/body_gazebo /home/wqh/catkin_ws/build /home/wqh/catkin_ws/build/simulation/body_gazebo /home/wqh/catkin_ws/build/simulation/body_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/betelgeuse/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/betelgeuse/catkin_ws/src /home/betelgeuse/catkin_ws/src/simulation/body_gazebo /home/betelgeuse/catkin_ws/build /home/betelgeuse/catkin_ws/build/simulation/body_gazebo /home/betelgeuse/catkin_ws/build/simulation/body_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : simulation/body_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/depend
 

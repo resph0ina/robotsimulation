@@ -1,8 +1,0 @@
-prefix=/home/wqh/catkin_ws/install
-
-Name: my_gazebo
-Description: Description of my_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/wqh/catkin_ws/install/lib 
-Requires: 

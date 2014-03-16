@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/wqh/catkin_ws/devel/include/interface/AddTwoInts.h
+/home/betelgeuse/catkin_ws/devel/include/interface/AddTwoInts.h
 ros/service_traits.h
 -
 interface/AddTwoIntsRequest.h
@@ -14,7 +14,7 @@ interface/AddTwoIntsRequest.h
 interface/AddTwoIntsResponse.h
 -
 
-/home/wqh/catkin_ws/devel/include/interface/AddTwoIntsRequest.h
+/home/betelgeuse/catkin_ws/devel/include/interface/AddTwoIntsRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wqh/catkin_ws/devel/include/interface/AddTwoIntsResponse.h
+/home/betelgeuse/catkin_ws/devel/include/interface/AddTwoIntsResponse.h
 string
 -
 vector
@@ -46,11 +46,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wqh/catkin_ws/src/interface/src/add_two_ints_client.cpp
+/home/betelgeuse/catkin_ws/src/interface/src/add_two_ints_client.cpp
 ros/ros.h
-/home/wqh/catkin_ws/src/interface/src/ros/ros.h
+/home/betelgeuse/catkin_ws/src/interface/src/ros/ros.h
 interface/AddTwoInts.h
-/home/wqh/catkin_ws/src/interface/src/interface/AddTwoInts.h
+/home/betelgeuse/catkin_ws/src/interface/src/interface/AddTwoInts.h
 cstdlib
 -
 

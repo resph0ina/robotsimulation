@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wqh/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/betelgeuse/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wqh/catkin_ws/build
+CMAKE_BINARY_DIR = /home/betelgeuse/catkin_ws/build
 
 # Utility rule file for interface_generate_messages.
 
@@ -53,10 +53,10 @@ interface/CMakeFiles/interface_generate_messages.dir/build: interface_generate_m
 .PHONY : interface/CMakeFiles/interface_generate_messages.dir/build
 
 interface/CMakeFiles/interface_generate_messages.dir/clean:
-	cd /home/wqh/catkin_ws/build/interface && $(CMAKE_COMMAND) -P CMakeFiles/interface_generate_messages.dir/cmake_clean.cmake
+	cd /home/betelgeuse/catkin_ws/build/interface && $(CMAKE_COMMAND) -P CMakeFiles/interface_generate_messages.dir/cmake_clean.cmake
 .PHONY : interface/CMakeFiles/interface_generate_messages.dir/clean
 
 interface/CMakeFiles/interface_generate_messages.dir/depend:
-	cd /home/wqh/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wqh/catkin_ws/src /home/wqh/catkin_ws/src/interface /home/wqh/catkin_ws/build /home/wqh/catkin_ws/build/interface /home/wqh/catkin_ws/build/interface/CMakeFiles/interface_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/betelgeuse/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/betelgeuse/catkin_ws/src /home/betelgeuse/catkin_ws/src/interface /home/betelgeuse/catkin_ws/build /home/betelgeuse/catkin_ws/build/interface /home/betelgeuse/catkin_ws/build/interface/CMakeFiles/interface_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interface/CMakeFiles/interface_generate_messages.dir/depend
 

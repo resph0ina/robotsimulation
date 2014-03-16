@@ -3,7 +3,5 @@
   (:export
    "<NUM>"
    "NUM"
-   "<VALUE>"
-   "VALUE"
   ))
 

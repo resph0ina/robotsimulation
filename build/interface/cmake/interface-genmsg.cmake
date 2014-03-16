@@ -2,7 +2,7 @@
 
 message(STATUS "interface: 1 messages, 3 services")
 
-set(MSG_I_FLAGS "-Iinterface:/home/wqh/catkin_ws/src/interface/msg;-Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iinterface:/home/betelgeuse/catkin_ws/src/interface/msg;-Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -18,7 +18,7 @@ add_custom_target(interface_generate_messages ALL)
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(interface
-  "/home/wqh/catkin_ws/src/interface/msg/Num.msg"
+  "/home/betelgeuse/catkin_ws/src/interface/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interface
@@ -26,19 +26,19 @@ _generate_msg_cpp(interface
 
 ### Generating Services
 _generate_srv_cpp(interface
-  "/home/wqh/catkin_ws/src/interface/srv/AddTwoInts.srv"
+  "/home/betelgeuse/catkin_ws/src/interface/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interface
 )
 _generate_srv_cpp(interface
-  "/home/wqh/catkin_ws/src/interface/srv/parameter.srv"
+  "/home/betelgeuse/catkin_ws/src/interface/srv/parameter.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interface
 )
 _generate_srv_cpp(interface
-  "/home/wqh/catkin_ws/src/interface/srv/converter.srv"
+  "/home/betelgeuse/catkin_ws/src/interface/srv/converter.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interface
@@ -65,7 +65,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS interface_generate_messages_cpp)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(interface
-  "/home/wqh/catkin_ws/src/interface/msg/Num.msg"
+  "/home/betelgeuse/catkin_ws/src/interface/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interface
@@ -73,19 +73,19 @@ _generate_msg_lisp(interface
 
 ### Generating Services
 _generate_srv_lisp(interface
-  "/home/wqh/catkin_ws/src/interface/srv/AddTwoInts.srv"
+  "/home/betelgeuse/catkin_ws/src/interface/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interface
 )
 _generate_srv_lisp(interface
-  "/home/wqh/catkin_ws/src/interface/srv/parameter.srv"
+  "/home/betelgeuse/catkin_ws/src/interface/srv/parameter.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interface
 )
 _generate_srv_lisp(interface
-  "/home/wqh/catkin_ws/src/interface/srv/converter.srv"
+  "/home/betelgeuse/catkin_ws/src/interface/srv/converter.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interface
@@ -112,7 +112,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS interface_generate_messages_lisp)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(interface
-  "/home/wqh/catkin_ws/src/interface/msg/Num.msg"
+  "/home/betelgeuse/catkin_ws/src/interface/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interface
@@ -120,19 +120,19 @@ _generate_msg_py(interface
 
 ### Generating Services
 _generate_srv_py(interface
-  "/home/wqh/catkin_ws/src/interface/srv/AddTwoInts.srv"
+  "/home/betelgeuse/catkin_ws/src/interface/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interface
 )
 _generate_srv_py(interface
-  "/home/wqh/catkin_ws/src/interface/srv/parameter.srv"
+  "/home/betelgeuse/catkin_ws/src/interface/srv/parameter.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interface
 )
 _generate_srv_py(interface
-  "/home/wqh/catkin_ws/src/interface/srv/converter.srv"
+  "/home/betelgeuse/catkin_ws/src/interface/srv/converter.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interface
@@ -156,6 +156,8 @@ add_dependencies(interface_genpy interface_generate_messages_py)
 # register target for catkin_package(EXPORTED_TARGETS)
 list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS interface_generate_messages_py)
 
+
+debug_message(2 "interface: Iflags=${MSG_I_FLAGS}")
 
 
 if(gencpp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interface)

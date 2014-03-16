@@ -1,9 +1,9 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/interface_generate_messages_cpp"
-  "/home/wqh/catkin_ws/devel/include/interface/Num.h"
-  "/home/wqh/catkin_ws/devel/include/interface/AddTwoInts.h"
-  "/home/wqh/catkin_ws/devel/include/interface/parameter.h"
-  "/home/wqh/catkin_ws/devel/include/interface/converter.h"
+  "/home/betelgeuse/catkin_ws/devel/include/interface/Num.h"
+  "/home/betelgeuse/catkin_ws/devel/include/interface/AddTwoInts.h"
+  "/home/betelgeuse/catkin_ws/devel/include/interface/parameter.h"
+  "/home/betelgeuse/catkin_ws/devel/include/interface/converter.h"
 )
 
 # Per-language clean rules from dependency scanning.
