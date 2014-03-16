@@ -1,0 +1,8 @@
+prefix=/home/wqh/catkin_ws/devel
+
+Name: interface
+Description: Description of interface
+Version: 0.0.0
+Cflags: -I/home/wqh/catkin_ws/devel/include
+Libs: -L/home/wqh/catkin_ws/devel/lib 
+Requires: 

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "my_gazebo")
+set(my_gazebo_MAINTAINER "wqh <wqh@todo.todo>")
+set(my_gazebo_DEPRECATED "")
+set(my_gazebo_VERSION "0.0.0")
+set(my_gazebo_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(my_gazebo_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(my_gazebo_BUILDTOOL_DEPENDS "catkin")

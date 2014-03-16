@@ -1,0 +1,433 @@
+<?xml version="1.0" ?>
+  <robot name='robot_body'>
+    <link name='Body'>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0430338 2.51875e-17 0.0481748 0 -0 0</pose>
+        <mass>24.0443</mass>
+        <inertia>
+          <ixx>1.00752</ixx>
+          <ixy>6.08944e-17</ixy>
+          <ixz>-0.000582815</ixz>
+          <iyy>0.921605</iyy>
+          <iyz>-4.10792e-17</iyz>
+          <izz>0.246338</izz>
+        </inertia>
+      </inertial>
+      <collision name='Body_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/Body.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Body_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/Body.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <link name='HipL'>
+      <pose>-0.0429511 0.18 -0.209794 1.5708 -0 0</pose>
+      <inertial>
+        <pose>-0.00100254 -0.0268953 2.77556e-17 0 -0 0</pose>
+        <mass>0.335132</mass>
+        <inertia>
+          <ixx>0.000287366</ixx>
+          <ixy>6.91329e-07</ixy>
+          <ixz>-3.56249e-20</ixz>
+          <iyy>0.000424745</iyy>
+          <iyz>9.2117e-22</iyz>
+          <izz>0.000335542</izz>
+        </inertia>
+      </inertial>
+      <collision name='HipL_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/HipL.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='HipL_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/HipL.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='Hip_L_x' type='revolute'>
+      <child>HipL</child>
+      <parent>Body</parent>
+      <axis>
+        <xyz>0 3.61121e-15 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='thighL'>
+      <pose>-0.0441186 0.18 -0.277794 1.5708 -0 0</pose>
+      <inertial>
+        <pose>-0.0415961 -0.181209 -0.015 0 -0 0</pose>
+        <mass>1.64773</mass>
+        <inertia>
+          <ixx>0.0229938</ixx>
+          <ixy>0.00501233</ixy>
+          <ixz>9.09401e-20</ixz>
+          <iyy>0.00230868</iyy>
+          <iyz>-1.42459e-20</iyz>
+          <izz>0.0246159</izz>
+        </inertia>
+      </inertial>
+      <collision name='thighL_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/thighL.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='thighL_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/thighL.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='kneeL' type='revolute'>
+      <child>thighL</child>
+      <parent>HipL</parent>
+      <axis>
+        <xyz>0 1 3.61121e-15</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='shankL'>
+      <pose>-0.0441186 0.18 -0.649637 1.5708 -0 0</pose>
+      <inertial>
+        <pose>-0.205108 -0.130943 -0.015 0 -0 0</pose>
+        <mass>1.64773</mass>
+        <inertia>
+          <ixx>0.0142604</ixx>
+          <ixy>0.0113799</ixy>
+          <ixz>-9.6503e-20</ixz>
+          <iyy>0.011042</iyy>
+          <iyz>-8.87327e-20</iyz>
+          <izz>0.0246159</izz>
+        </inertia>
+      </inertial>
+      <collision name='shankL_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/shankL.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='shankL_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/shankL.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='ankle' type='revolute'>
+      <child>shankL</child>
+      <parent>thighL</parent>
+      <axis>
+        <xyz>0 1 3.61121e-15</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='footL'>
+      <pose>-0.0441186 0.18 -1.02148 1.5708 -0 0</pose>
+      <inertial>
+        <pose>-0.29328 0.0496127 -0.02 0 -0 0</pose>
+        <mass>1.13129</mass>
+        <inertia>
+          <ixx>0.00193853</ixx>
+          <ixy>-0.000384336</ixy>
+          <ixz>-1.69779e-18</ixz>
+          <iyy>0.00721765</iyy>
+          <iyz>1.21409e-19</iyz>
+          <izz>0.0065025</izz>
+        </inertia>
+      </inertial>
+      <collision name='footL_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/footL.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='footL_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/footL.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='ankleL' type='revolute'>
+      <child>footL</child>
+      <parent>shankL</parent>
+      <axis>
+        <xyz>0 1 3.61121e-15</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='HipR'>
+      <pose>-0.0429511 -0.18 -0.209794 1.5708 -0 0</pose>
+      <inertial>
+        <pose>-0.00100254 -0.0268953 0 0 -0 0</pose>
+        <mass>0.335132</mass>
+        <inertia>
+          <ixx>0.000287366</ixx>
+          <ixy>6.91329e-07</ixy>
+          <ixz>9.45841e-21</ixz>
+          <iyy>0.000424745</iyy>
+          <iyz>-4.20604e-21</iyz>
+          <izz>0.000335542</izz>
+        </inertia>
+      </inertial>
+      <collision name='HipR_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/HipR.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='HipR_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/HipR.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='hipr' type='revolute'>
+      <child>HipR</child>
+      <parent>Body</parent>
+      <axis>
+        <xyz>0 3.61121e-15 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='Hip_thighR'>
+      <pose>-0.0441186 -0.18 -0.277794 1.5708 -0 0</pose>
+      <inertial>
+        <pose>0.13476 -0.128088 0.015 0 -0 0</pose>
+        <mass>1.64773</mass>
+        <inertia>
+          <ixx>0.0120681</ixx>
+          <ixy>-0.0114783</ixy>
+          <ixz>1.92853e-19</ixz>
+          <iyy>0.0132343</iyy>
+          <iyz>-2.44425e-19</iyz>
+          <izz>0.0246159</izz>
+        </inertia>
+      </inertial>
+      <collision name='Hip_thighR_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/Hip_thighR.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Hip_thighR_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/Hip_thighR.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='HipR_x' type='revolute'>
+      <child>Hip_thighR</child>
+      <parent>HipR</parent>
+      <axis>
+        <xyz>0 1 3.61121e-15</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='ShankR'>
+      <pose>-0.0441186 -0.18 -0.649637 1.5708 -0 0</pose>
+      <inertial>
+        <pose>0.26952 -0.0702546 0.015 0 -0 0</pose>
+        <mass>1.64773</mass>
+        <inertia>
+          <ixx>0.0241443</ixx>
+          <ixy>-1.24209e-19</ixy>
+          <ixz>4.10971e-21</ixz>
+          <iyy>0.00115811</iyy>
+          <iyz>-1.36586e-19</iyz>
+          <izz>0.0246159</izz>
+        </inertia>
+      </inertial>
+      <collision name='ShankR_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/ShankR.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='ShankR_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/ShankR.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='knee' type='revolute'>
+      <child>ShankR</child>
+      <parent>Hip_thighR</parent>
+      <axis>
+        <xyz>0 1 3.61121e-15</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+    <link name='FootR'>
+      <pose>-0.0441186 -0.18 -1.02148 1.5708 -0 0</pose>
+      <inertial>
+        <pose>0.303264 0.0647478 0.02 0 -0 0</pose>
+        <mass>1.13129</mass>
+        <inertia>
+          <ixx>0.00193853</ixx>
+          <ixy>-0.000384336</ixy>
+          <ixz>-1.69779e-18</ixz>
+          <iyy>0.00721765</iyy>
+          <iyz>1.21409e-19</iyz>
+          <izz>0.0065025</izz>
+        </inertia>
+      </inertial>
+      <collision name='FootR_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/FootR.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='FootR_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robot_body/meshes/FootR.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='ankleR' type='revolute'>
+      <child>FootR</child>
+      <parent>ShankR</parent>
+      <axis>
+        <xyz>0 1 3.61121e-15</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics/>
+      </axis>
+    </joint>
+  </model>
+</sdf>

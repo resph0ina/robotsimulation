@@ -1,0 +1,467 @@
+<robot
+  name="body_description">
+  <link
+    name="Body">
+    <inertial>
+      <origin
+        xyz="-0.0430338224683465 2.51874748331813E-17 0.0481748395703227"
+        rpy="0 0 0" />
+      <mass
+        value="24.0442675677932" />
+      <inertia
+        ixx="1.00752418884466"
+        ixy="6.08943679802397E-17"
+        ixz="-0.000582815305068089"
+        iyy="0.921605023981371"
+        iyz="-4.10791601620893E-17"
+        izz="0.246337990676566" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/Body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/Body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="HipR">
+    <inertial>
+      <origin
+        xyz="-0.00100253508018519 -0.0268952662819696 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.335131558758397" />
+      <inertia
+        ixx="0.000287366485495301"
+        ixy="6.91329458318341E-07"
+        ixz="9.45841251033444E-21"
+        iyy="0.000424744829971212"
+        iyz="-4.20604344149166E-21"
+        izz="0.000335541958380517" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/HipR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/HipR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hipr"
+    type="continuous">
+    <origin
+      xyz="-0.0429510575449781 -0.18 -0.209793752061573"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="Body" />
+    <child
+      link="HipR" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="Hip_thighR">
+    <inertial>
+      <origin
+        xyz="0.134759968213975 -0.128088059256115 0.0149999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="1.64773462290699" />
+      <inertia
+        ixx="0.0120681268115792"
+        ixy="-0.0114783056484543"
+        ixz="1.92853394556422E-19"
+        iyy="0.0132343000569375"
+        iyz="-2.44425170415214E-19"
+        izz="0.0246158707756387" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/Hip_thighR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/Hip_thighR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HipR_x"
+    type="continuous">
+    <origin
+      xyz="-0.00116753384173052 -0.068 0"
+      rpy="0 0 0" />
+    <parent
+      link="HipR" />
+    <child
+      link="Hip_thighR" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="ShankR">
+    <inertial>
+      <origin
+        xyz="0.269519936427951 -0.0702546298213587 0.0149999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="1.64773462290699" />
+      <inertia
+        ixx="0.0241443196535919"
+        ixy="-1.24208673874215E-19"
+        ixz="4.1097090100343E-21"
+        iyy="0.0011581072149247"
+        iyz="-1.36586481924614E-19"
+        izz="0.0246158707756387" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/ShankR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/ShankR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee"
+    type="continuous">
+    <origin
+      xyz="0 -0.37184297738174 0"
+      rpy="0 0 0" />
+    <parent
+      link="Hip_thighR" />
+    <child
+      link="ShankR" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="FootR">
+    <inertial>
+      <origin
+        xyz="0.303263526833756 0.0647478495892708 0.0199999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="1.13129330144335" />
+      <inertia
+        ixx="0.00193852779473461"
+        ixy="-0.000384336155315551"
+        ixz="-1.69779398431817E-18"
+        iyy="0.00721764940375921"
+        iyz="1.21408579816275E-19"
+        izz="0.00650249898477559" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/FootR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/FootR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ankleR"
+    type="continuous">
+    <origin
+      xyz="0 -0.37184297738174 0"
+      rpy="0 0 0" />
+    <parent
+      link="ShankR" />
+    <child
+      link="FootR" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="HipL">
+    <inertial>
+      <origin
+        xyz="-0.0010025350801852 -0.0268952662819696 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.335131558758397" />
+      <inertia
+        ixx="0.000287366485495301"
+        ixy="6.91329458318332E-07"
+        ixz="-3.56248657068014E-20"
+        iyy="0.000424744829971213"
+        iyz="9.2117036390496E-22"
+        izz="0.000335541958380517" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/HipL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/HipL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip_L_x"
+    type="continuous">
+    <origin
+      xyz="-0.0429510575449806 0.179999999999999 -0.209793752061572"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="Body" />
+    <child
+      link="HipL" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="thighL">
+    <inertial>
+      <origin
+        xyz="-0.041596063156316 -0.181208629725313 -0.0150000000000013"
+        rpy="0 0 0" />
+      <mass
+        value="1.647734622907" />
+      <inertia
+        ixx="0.0229937505764562"
+        ixy="0.00501232640907818"
+        ixz="9.09401134867714E-20"
+        iyy="0.00230867629206045"
+        iyz="-1.42459359157928E-20"
+        izz="0.0246158707756387" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/thighL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/thighL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="kneeL"
+    type="continuous">
+    <origin
+      xyz="-0.00116753384173094 -0.0680000000000001 0"
+      rpy="0 0 0" />
+    <parent
+      link="HipL" />
+    <child
+      link="thighL" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="shankL">
+    <inertial>
+      <origin
+        xyz="-0.205108045237752 -0.130942756697887 -0.0150000000000014"
+        rpy="0 0 0" />
+      <mass
+        value="1.647734622907" />
+      <inertia
+        ixx="0.0142604030418087"
+        ixy="0.0113798945239329"
+        ixz="-9.65030406758822E-20"
+        iyy="0.011042023826708"
+        iyz="-8.87327021082548E-20"
+        izz="0.0246158707756388" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/shankL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/shankL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ankle"
+    type="continuous">
+    <origin
+      xyz="0 -0.37184297738174 0"
+      rpy="0 0 0" />
+    <parent
+      link="thighL" />
+    <child
+      link="shankL" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="footL">
+    <inertial>
+      <origin
+        xyz="-0.293280373757072 0.0496127367746103 -0.0200000000000014"
+        rpy="0 0 0" />
+      <mass
+        value="1.13129330144335" />
+      <inertia
+        ixx="0.00193852779473461"
+        ixy="-0.000384336155315551"
+        ixz="-1.69779398431817E-18"
+        iyy="0.00721764940375921"
+        iyz="1.21408579816275E-19"
+        izz="0.00650249898477559" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/footL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://body_description/meshes/footL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ankleL"
+    type="continuous">
+    <origin
+      xyz="0 -0.37184297738174 0"
+      rpy="0 0 0" />
+    <parent
+      link="shankL" />
+    <child
+      link="footL" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>

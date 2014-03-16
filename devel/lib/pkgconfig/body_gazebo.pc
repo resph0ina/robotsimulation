@@ -1,0 +1,8 @@
+prefix=/home/wqh/catkin_ws/devel
+
+Name: body_gazebo
+Description: Description of body_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wqh/catkin_ws/devel/lib 
+Requires: 
