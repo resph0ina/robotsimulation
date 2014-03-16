@@ -7,6 +7,12 @@ interface/CMakeFiles/server.dir/src/server.cpp.o: /home/betelgeuse/catkin_ws/dev
 interface/CMakeFiles/server.dir/src/server.cpp.o: /home/betelgeuse/catkin_ws/src/interface/src/server.cpp
 interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/XmlRpcDecl.h
 interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/XmlRpcValue.h
+interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/gazebo_msgs/ModelStates.h
+interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/geometry_msgs/Point.h
+interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/geometry_msgs/Pose.h
+interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/geometry_msgs/Quaternion.h
+interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/geometry_msgs/Twist.h
+interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/geometry_msgs/Vector3.h
 interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/ros/advertise_options.h
 interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/ros/advertise_service_options.h
 interface/CMakeFiles/server.dir/src/server.cpp.o: /opt/ros/hydro/include/ros/assert.h
