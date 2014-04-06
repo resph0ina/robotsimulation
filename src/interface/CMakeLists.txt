@@ -109,9 +109,9 @@ add_executable(simulator_server src/simulator_server.cpp)
 target_link_libraries(simulator_server ${catkin_LIBRARIES})
 add_dependencies(simulator_server interface_gencpp)
 
-add_executable(simulator_client src/simulator_client.cpp)
-target_link_libraries(simulator_client ${catkin_LIBRARIES})
-add_dependencies(simulator_client interface_gencpp)
+#add_executable(simulator_client src/simulator_client.cpp)
+#target_link_libraries(simulator_client ${catkin_LIBRARIES})
+#add_dependencies(simulator_client interface_gencpp)
 
 add_executable(server src/server.cpp)
 target_link_libraries(server ${catkin_LIBRARIES})

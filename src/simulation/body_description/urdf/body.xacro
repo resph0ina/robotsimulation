@@ -10,7 +10,7 @@
   <xacro:property name="wheelradius" value="0.05" />
   <xacro:property name="damping" value="0.7" />
   <xacro:property name="wheelmass" value="5" />
-  <xacro:property name="wheelmoment" value="0.006" />
+  <xacro:property name="wheelmoment" value="1" />
   
   
   <link name="base_link">

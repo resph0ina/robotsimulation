@@ -13,7 +13,7 @@
     <material>Gazebo/Grey</material>
   </gazebo>
   
-  <xacro:property name="mu" value="0.7" /> 
+  <xacro:property name="mu" value="1" /> 
 
   <gazebo reference="right_front_wheel">
     <mu1>${mu}</mu1>
@@ -21,8 +21,8 @@
     <material>Gazebo/Orange</material>
   </gazebo>
   <gazebo reference="right_back_wheel">
-    <mu1>${mu}</mu1>
-    <mu2>${mu}</mu2>
+    <mu1>0</mu1>
+    <mu2>0</mu2>
     <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="left_front_wheel">
@@ -31,8 +31,8 @@
     <material>Gazebo/Orange</material>
   </gazebo>
   <gazebo reference="left_back_wheel">
-    <mu1>${mu}</mu1>
-    <mu2>${mu}</mu2>
+    <mu1>0</mu1>
+    <mu2>0</mu2>
     <material>Gazebo/Black</material>
   </gazebo>
 
